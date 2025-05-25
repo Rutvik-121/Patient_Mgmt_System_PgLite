@@ -46,7 +46,7 @@ const Sidebar: React.FC<SidebarProps> = ({ open, onClose }) => {
         }`}
       >
         <div className="flex items-center justify-between h-16 px-4 border-b border-gray-200">
-          <span className="text-xl font-bold text-primary-800">MedicalBlocks</span>
+          <span className="text-xl font-bold text-primary-800">HealthBricks</span>
           <button
             type="button"
             className="rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"

@@ -70,21 +70,11 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 px-5 py-3 flex items-center justify-between">
-            <div className="text-sm">
-              <Link
-                to="/patients"
-                className="font-medium text-primary-600 hover:text-primary-500"
-              >
-                View all patients
-              </Link>
-            </div>
+          <div className="bg-gray-50 px-5 py-3 flex items-center justify-end">
             <span className="inline-flex rounded-md shadow-sm">
-              <Link
-                to="/register"
-                className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
-              >
-                <UserPlus className="h-4 w-4 mr-1" /> Register New
+              <Link to="/patients"
+              className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                View All Patients
               </Link>
             </span>
           </div>
