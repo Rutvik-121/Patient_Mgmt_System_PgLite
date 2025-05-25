@@ -103,7 +103,7 @@ const PatientQuery: React.FC = () => {
                 onClick={() => handleLoadExample('SELECT * FROM patients ORDER BY last_name LIMIT 10')}
                 className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
               >
-                <Clipboard className="h-4 w-4 mr-1" /> Basic query
+                <Clipboard className="h-4 w-4 mr-1" /> Browse Patients
               </button>
               <button
                 type="button"
@@ -117,7 +117,14 @@ const PatientQuery: React.FC = () => {
                 onClick={() => handleLoadExample("SELECT gender, COUNT(*) as count FROM patients GROUP BY gender")}
                 className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
               >
-                <Clipboard className="h-4 w-4 mr-1" /> Statistics
+                <Clipboard className="h-4 w-4 mr-1" /> Gender Statistics
+              </button>
+              <button
+                type="button"
+                onClick={() => handleLoadExample("DELETE FROM patients")}
+                className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+              >
+                <Clipboard className="h-4 w-4 mr-1" /> Delete table
               </button>
             </div>
             <button
